@@ -118,9 +118,29 @@
 
             <a href="#home">Contact Us</a>
 
-            <a href="#">Program Sign-In</a>
-
         </div>
+
+        <br>
+
+        <button onclick="myfun()">Sign up for program</button>
+
+        <script type="text/javascript">
+
+            var newWin;
+            function myfun(){
+                newWin = window.open('fakePage.html','Fake page','width=800,height=500');
+
+                document.onmousedown=focusPopup;
+                document.onkeyup=focusPopup;
+                document.onmousemove=focusPopup;
+            }
+            function focusPopup(){
+                if(!newWin.close){
+                    newWin.focus();
+                }
+            }
+
+        </script>
 
     </body>
 </html>
