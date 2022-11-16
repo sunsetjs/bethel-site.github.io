@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="home.css">    
     </head>
     <body>
+        <div>
+            <img id="logo" src="https://static.wixstatic.com/media/952408_b01443feddc24f519cb8e4d6b05ea175~mv2.jpg/v1/fill/w_980,h_582,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/952408_b01443feddc24f519cb8e4d6b05ea175~mv2.jpg" alt="Logo" style="width: 100%; height: 282px; object-fit: cover; object-position: 50% 40%;">
+            <div class="centered">WELCOME TO BETHEL GOSPEL ASSEMBLY</div>
+        </div>
         <!--   ****** NavBar ****** -->
-        <div id="navbar">        
-            <a href="#default" id="logo"><img id="img" height="60px" width="110px" src="https://cdn.logo.com/hotlink-ok/logo-social.png"></a>            
-            <div id="navbar-right">
+        <div class="navbar">        
             <a href="#home">Home</a>
 
             <div class="dropdown">
@@ -120,37 +121,18 @@
             </div>
 
             <a href="#home">Contact Us</a>
-            </div>
 
         </div>
 
-        <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
-            <button id="block" onclick="myfun()" width="50%">Sign up for program</button>
-            <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
 
-          </div>
+        <button onclick="myfun()">Sign up for program</button>
 
         <script type="text/javascript">
-
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "1px 10px";
-    document.getElementById("img").style.width = "60px";
-    document.getElementById("img").style.height = "35px";
-  } else {
-    document.getElementById("navbar").style.padding = "55px 10px";
-    document.getElementById("img").style.height = "60px";
-    document.getElementById("img").style.width = "110px";
-  }
-}
 
             var newWin;
             function myfun(){
                 newWin = window.open('fakePage.html','Fake page','width=500,height=650,left=450,top=100');
-
                 document.onmousedown=focusPopup;
                 document.onkeyup=focusPopup;
                 document.onmousemove=focusPopup;
