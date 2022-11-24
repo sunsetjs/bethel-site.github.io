@@ -1,7 +1,14 @@
 body {
+  margin: 0;
   overflow-x: auto;
   overflow-y: scroll;
   font-family: Arial,Helvetica,sans-serif;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .centered {
@@ -13,13 +20,13 @@ body {
   transform: translate(-10%, -10%);
 }
 
-.navbar {
+#navbar {
   position: sticky;
-  height: 46px;
+  height: 50px;
   background-color: #1b1b1b;
 }
 
-.navbar a {
+#navbar a {
     float: left;
     font-size: 16px;
     color: white;
@@ -48,8 +55,9 @@ body {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+#navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
+    height: 22px;
 }
 
 .dropdown-one {
@@ -127,7 +135,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 120px;
+  top: 137px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -137,7 +145,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 162px;
+  top: 179px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -147,7 +155,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 204px;
+  top: 221px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -157,7 +165,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 264px;
+  top: 281px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -167,7 +175,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 180px;
+  top: 198px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -177,7 +185,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 240px;
+  top: 258px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -187,7 +195,7 @@ body {
   display: none;
   position: absolute;
   left: 160px;
-  top: 300px;
+  top: 318px;
   min-width: 160px;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
